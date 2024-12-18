@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark black background */
+    color: #d4af37; /* Gold text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: #000000; /* Black */
+    color: #d4af37; /* Gold */
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #333333; /* Dark gray for tab background */
+    padding: 10px 0;
+    border-bottom: 2px solid #000000; /* Black border */
+    gap: 10px;
+}
+
+.tab-link {
+    text-decoration: none;
+    color: #d4af37; /* Gold */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #444444; /* Dark gray hover */
+    color: #d4af37; /* Gold */
+}
+
+.tab-link.active {
+    background-color: #d4af37; /* Gold for active tab */
+    color: #000000; /* Black */
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #2a2a2a; /* Dark gray for container */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d4af37; /* Gold */
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #d4af37; /* Gold */
+    border-bottom: 2px solid #d4af37; /* Gold border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p, section ul {
+    margin-top: 10px;
+    color: #d4af37;
+    line-height: 1.8;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+section ul li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: #444444; /* Dark gray background for list items */
+    border: 1px solid #666666; /* Light gray border */
+    border-radius: 4px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+section ul li:hover {
+    background-color: #5c5c5c; /* Slightly lighter gray for hover */
+    transform: translateX(5px);
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #d4af37; /* Gold */
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    color: #000000; /* Black for hover links */
+}
+
+/* Shop Section Specific */
+.shop-item {
+    background-color: #333333; /* Dark gray for shop items */
+    padding: 15px;
+    border: 1px solid #d4af37; /* Gold border */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.shop-item:hover {
+    background-color: #444444; /* Slightly lighter gray for hover */
+    transform: scale(1.02);
+}
+
+.shop-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.shop-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    background-color: #d4af37; /* Gold */
+    color: #000000; /* Black */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #c19d2b; /* Slightly darker gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+
+    .tab-link {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+}
